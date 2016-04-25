@@ -29,6 +29,6 @@ end
 defmodule CartClientPolicy do
   def default_policy(_, _\\nil) do
     app_name = Mix.Project.config[:app]
-    {Cart.Server, Application.get_env(app_name, :cart_node)}
+    {Cart.CartServer, Application.get_env(app_name, :cart_node)}
   end
 end
