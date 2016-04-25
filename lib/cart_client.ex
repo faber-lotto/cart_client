@@ -1,5 +1,5 @@
 defmodule CartClient do
-  import  Narp
+  import Narp
 
   defg add_item(item) do
     server -> GenServer.call(server, {:add_item, item})

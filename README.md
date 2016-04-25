@@ -5,7 +5,7 @@ CartClient is a small library of functions that simplify communication with the 
 ### Usage
 Add
 ```
-{:cart_client, "~> 0.0.1"}
+{:cart_client, git: "https://github.com/faber-lotto/cart_client.git"}
 ```
 to your deps.
 
