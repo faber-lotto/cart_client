@@ -2,7 +2,7 @@ defmodule CartClientTest do
   use ExUnit.Case, async: false
 
   setup_all do
-    TestServer.start_link
+    CartClient.TestServer.start_link
     :ok
   end
 

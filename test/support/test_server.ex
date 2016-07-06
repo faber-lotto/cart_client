@@ -1,4 +1,4 @@
-defmodule TestServer do
+defmodule CartClient.TestServer do
   use GenServer
 
   def start_link do
