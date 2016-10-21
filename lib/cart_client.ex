@@ -28,8 +28,7 @@ end
 
 defmodule CartClientPolicy do
   def default_policy(_, _\\nil) do
-    app_name = Mix.Project.config[:app]
-    if cart_node = Application.get_env(app_name, :cart_node) do
+    if cart_node = Application.get_env(:cart_client, :cart_node) do
       {Cart.CartServer, cart_node}
     else
       raise ":cart_node is not configured for your application in :#{Mix.env} environment"

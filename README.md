@@ -12,7 +12,7 @@ to your deps.
 Specify your Cart server in the config file of your desired environment:
 
 ```
-config :my_app,
+config :cart_client,
   cart_node: :"cart@some.node"
 ```
 
